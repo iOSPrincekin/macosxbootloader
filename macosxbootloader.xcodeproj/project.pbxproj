@@ -1,0 +1,1108 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B7D01982E764682006A10B6 /* AcpiUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01302E764681006A10B6 /* AcpiUtils.cpp */; };
+		9B7D01992E764682006A10B6 /* Memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01352E764681006A10B6 /* Memory.cpp */; };
+		9B7D019A2E764682006A10B6 /* MD5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01362E764681006A10B6 /* MD5.cpp */; };
+		9B7D019B2E764682006A10B6 /* RuntimeLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01392E764681006A10B6 /* RuntimeLib.cpp */; };
+		9B7D019C2E764682006A10B6 /* LoadDrivers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D013A2E764681006A10B6 /* LoadDrivers.cpp */; };
+		9B7D019D2E764682006A10B6 /* PeImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D013D2E764681006A10B6 /* PeImage.cpp */; };
+		9B7D019E2E764682006A10B6 /* Hibernate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D013E2E764681006A10B6 /* Hibernate.cpp */; };
+		9B7D019F2E764682006A10B6 /* BootArgs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01402E764681006A10B6 /* BootArgs.cpp */; };
+		9B7D01A02E764682006A10B6 /* Base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01432E764681006A10B6 /* Base64.cpp */; };
+		9B7D01A12E764682006A10B6 /* GuidDefine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01452E764681006A10B6 /* GuidDefine.cpp */; };
+		9B7D01A22E764682006A10B6 /* DebugTrap.asm in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01492E764681006A10B6 /* DebugTrap.asm */; };
+		9B7D01A32E764682006A10B6 /* DebuggerUtilsX64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D014B2E764681006A10B6 /* DebuggerUtilsX64.cpp */; };
+		9B7D01A42E764682006A10B6 /* PortRegisterIo.asm in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D014C2E764681006A10B6 /* PortRegisterIo.asm */; };
+		9B7D01A52E764682006A10B6 /* CompilerX64.asm in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D014D2E764681006A10B6 /* CompilerX64.asm */; };
+		9B7D01A62E764682006A10B6 /* ArchUtilsX64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D014E2E764681006A10B6 /* ArchUtilsX64.cpp */; };
+		9B7D01A72E764682006A10B6 /* TransferRoutine.asm in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D014F2E764681006A10B6 /* TransferRoutine.asm */; };
+		9B7D01A82E764682006A10B6 /* Common.inc in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01502E764681006A10B6 /* Common.inc */; };
+		9B7D01A92E764682006A10B6 /* Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01522E764681006A10B6 /* Console.cpp */; };
+		9B7D01AA2E764682006A10B6 /* efi_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01542E764681006A10B6 /* efi_string.c */; };
+		9B7D01AB2E764682006A10B6 /* Crc32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01572E764681006A10B6 /* Crc32.cpp */; };
+		9B7D01AC2E764682006A10B6 /* DeviceTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01582E764681006A10B6 /* DeviceTree.cpp */; };
+		9B7D01AD2E764682006A10B6 /* MemoryMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D015A2E764681006A10B6 /* MemoryMap.cpp */; };
+		9B7D01AE2E764682006A10B6 /* Options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D015C2E764681006A10B6 /* Options.cpp */; };
+		9B7D01AF2E764682006A10B6 /* FileIo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D015D2E764681006A10B6 /* FileIo.cpp */; };
+		9B7D01B02E764682006A10B6 /* LoadKernel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01632E764681006A10B6 /* LoadKernel.cpp */; };
+		9B7D01B12E764682006A10B6 /* MiscUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01672E764681006A10B6 /* MiscUtils.cpp */; };
+		9B7D01B22E764682006A10B6 /* DevicePath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01692E764681006A10B6 /* DevicePath.cpp */; };
+		9B7D01B32E764682006A10B6 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D016A2E764681006A10B6 /* Config.cpp */; };
+		9B7D01B42E764682006A10B6 /* SHA256.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D016B2E764681006A10B6 /* SHA256.cpp */; };
+		9B7D01B52E764682006A10B6 /* ThunkCode32.asm in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D016D2E764681006A10B6 /* ThunkCode32.asm */; };
+		9B7D01B62E764682006A10B6 /* ArchUtilsX86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D016F2E764681006A10B6 /* ArchUtilsX86.cpp */; };
+		9B7D01B72E764682006A10B6 /* ThunkCode64.asm in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01702E764681006A10B6 /* ThunkCode64.asm */; };
+		9B7D01B82E764682006A10B6 /* DebuggerUtilsX86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01712E764681006A10B6 /* DebuggerUtilsX86.cpp */; };
+		9B7D01B92E764682006A10B6 /* CompilerX86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01722E764681006A10B6 /* CompilerX86.cpp */; };
+		9B7D01BA2E764682006A10B6 /* Thunk64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01732E764681006A10B6 /* Thunk64.cpp */; };
+		9B7D01BB2E764682006A10B6 /* Debug1394.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01752E764681006A10B6 /* Debug1394.cpp */; };
+		9B7D01BC2E764682006A10B6 /* MachO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01792E764681006A10B6 /* MachO.cpp */; };
+		9B7D01BD2E764682006A10B6 /* FileVault.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D017B2E764681006A10B6 /* FileVault.cpp */; };
+		9B7D01BE2E764682006A10B6 /* PlatformExpert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D017D2E764681006A10B6 /* PlatformExpert.cpp */; };
+		9B7D01BF2E764682006A10B6 /* StdAfx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D017E2E764681006A10B6 /* StdAfx.cpp */; };
+		9B7D01C02E764682006A10B6 /* NetBoot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D017F2E764681006A10B6 /* NetBoot.cpp */; };
+		9B7D01C12E764682006A10B6 /* BootDebugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01822E764681006A10B6 /* BootDebugger.cpp */; };
+		9B7D01C22E764682006A10B6 /* PanicDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01832E764681006A10B6 /* PanicDialog.cpp */; };
+		9B7D01C32E764682006A10B6 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01842E764681006A10B6 /* Main.cpp */; };
+		9B7D01C42E764682006A10B6 /* DebugUsb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01852E764681006A10B6 /* DebugUsb.cpp */; };
+		9B7D01C52E764682006A10B6 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D018A2E764681006A10B6 /* aeskey.c */; };
+		9B7D01C62E764682006A10B6 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D018F2E764681006A10B6 /* aescrypt.c */; };
+		9B7D01C72E764682006A10B6 /* aes_modes.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01932E764681006A10B6 /* aes_modes.c */; };
+		9B7D01C82E764682006A10B6 /* aesxts.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01942E764681006A10B6 /* aesxts.c */; };
+		9B7D01C92E764682006A10B6 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01972E764681006A10B6 /* aestab.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9B7D00AE2E7644E6006A10B6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9B7D00B02E7644E6006A10B6 /* macosxbootloader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = macosxbootloader; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B7D00BC2E764680006A10B6 /* stdlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdlib.h; sourceTree = "<group>"; };
+		9B7D00BD2E764680006A10B6 /* limits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = limits.h; sourceTree = "<group>"; };
+		9B7D00BF2E764680006A10B6 /* EfiPeOptionalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiPeOptionalHeader.h; sourceTree = "<group>"; };
+		9B7D00C02E764680006A10B6 /* EfiBind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiBind.h; sourceTree = "<group>"; };
+		9B7D00C12E764680006A10B6 /* EfiFirmwareVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiFirmwareVolume.h; sourceTree = "<group>"; };
+		9B7D00C32E764680006A10B6 /* AcpiCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcpiCommon.h; sourceTree = "<group>"; };
+		9B7D00C42E764680006A10B6 /* pci22.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pci22.h; sourceTree = "<group>"; };
+		9B7D00C52E764680006A10B6 /* Acpi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acpi.h; sourceTree = "<group>"; };
+		9B7D00C62E764680006A10B6 /* Acpi1_0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acpi1_0.h; sourceTree = "<group>"; };
+		9B7D00C72E764680006A10B6 /* Acpi3_0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acpi3_0.h; sourceTree = "<group>"; };
+		9B7D00C82E764680006A10B6 /* pci23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pci23.h; sourceTree = "<group>"; };
+		9B7D00C92E764680006A10B6 /* Acpi2_0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acpi2_0.h; sourceTree = "<group>"; };
+		9B7D00CA2E764680006A10B6 /* Smbios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Smbios.h; sourceTree = "<group>"; };
+		9B7D00CB2E764680006A10B6 /* pci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pci.h; sourceTree = "<group>"; };
+		9B7D00CC2E764680006A10B6 /* pci30.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pci30.h; sourceTree = "<group>"; };
+		9B7D00CD2E764680006A10B6 /* stddef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stddef.h; sourceTree = "<group>"; };
+		9B7D00CE2E764680006A10B6 /* EfiFirmwareFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiFirmwareFileSystem.h; sourceTree = "<group>"; };
+		9B7D00CF2E764680006A10B6 /* EfiImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiImage.h; sourceTree = "<group>"; };
+		9B7D00D02E764680006A10B6 /* pshpack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pshpack1.h; sourceTree = "<group>"; };
+		9B7D00D32E764680006A10B6 /* AppleNetBoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleNetBoot.h; sourceTree = "<group>"; };
+		9B7D00D52E764681006A10B6 /* SimplePointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePointer.h; sourceTree = "<group>"; };
+		9B7D00D72E764681006A10B6 /* AppleSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleSystemInfo.h; sourceTree = "<group>"; };
+		9B7D00D92E764681006A10B6 /* DiskIo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskIo.h; sourceTree = "<group>"; };
+		9B7D00DB2E764681006A10B6 /* SimpleTextOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTextOut.h; sourceTree = "<group>"; };
+		9B7D00DD2E764681006A10B6 /* AppleFirmwarePassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleFirmwarePassword.h; sourceTree = "<group>"; };
+		9B7D00DF2E764681006A10B6 /* ConsoleControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleControl.h; sourceTree = "<group>"; };
+		9B7D00E12E764681006A10B6 /* AppleSMC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleSMC.h; sourceTree = "<group>"; };
+		9B7D00E32E764681006A10B6 /* SimpleFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleFileSystem.h; sourceTree = "<group>"; };
+		9B7D00E52E764681006A10B6 /* AppleKeyState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleKeyState.h; sourceTree = "<group>"; };
+		9B7D00E72E764681006A10B6 /* FirmwareVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirmwareVolume.h; sourceTree = "<group>"; };
+		9B7D00E92E764681006A10B6 /* AppleDiskIo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleDiskIo.h; sourceTree = "<group>"; };
+		9B7D00EB2E764681006A10B6 /* DataHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHub.h; sourceTree = "<group>"; };
+		9B7D00ED2E764681006A10B6 /* LoadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadFile.h; sourceTree = "<group>"; };
+		9B7D00EF2E764681006A10B6 /* SimpleTextIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTextIn.h; sourceTree = "<group>"; };
+		9B7D00F12E764681006A10B6 /* AppleGraphInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleGraphInfo.h; sourceTree = "<group>"; };
+		9B7D00F32E764681006A10B6 /* FileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInfo.h; sourceTree = "<group>"; };
+		9B7D00F52E764681006A10B6 /* FirmwareVolumeDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirmwareVolumeDispatch.h; sourceTree = "<group>"; };
+		9B7D00F72E764681006A10B6 /* AppleDeviceProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleDeviceProperty.h; sourceTree = "<group>"; };
+		9B7D00F92E764681006A10B6 /* DevicePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePath.h; sourceTree = "<group>"; };
+		9B7D00FB2E764681006A10B6 /* AppleGraphConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleGraphConfig.h; sourceTree = "<group>"; };
+		9B7D00FD2E764681006A10B6 /* PciIo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PciIo.h; sourceTree = "<group>"; };
+		9B7D00FF2E764681006A10B6 /* UgaDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UgaDraw.h; sourceTree = "<group>"; };
+		9B7D01012E764681006A10B6 /* AppleDeviceControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleDeviceControl.h; sourceTree = "<group>"; };
+		9B7D01032E764681006A10B6 /* LoadedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadedImage.h; sourceTree = "<group>"; };
+		9B7D01052E764681006A10B6 /* BlockIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockIO.h; sourceTree = "<group>"; };
+		9B7D01072E764681006A10B6 /* GraphicsOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsOutput.h; sourceTree = "<group>"; };
+		9B7D01092E764681006A10B6 /* AppleImageCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleImageCodec.h; sourceTree = "<group>"; };
+		9B7D010A2E764681006A10B6 /* EfiError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiError.h; sourceTree = "<group>"; };
+		9B7D010B2E764681006A10B6 /* EfiApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiApi.h; sourceTree = "<group>"; };
+		9B7D010C2E764681006A10B6 /* EfiStatusCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiStatusCode.h; sourceTree = "<group>"; };
+		9B7D010D2E764681006A10B6 /* EfiFirmwareVolumeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiFirmwareVolumeHeader.h; sourceTree = "<group>"; };
+		9B7D010E2E764681006A10B6 /* EfiStdArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiStdArg.h; sourceTree = "<group>"; };
+		9B7D01102E764681006A10B6 /* EfiPeOptionalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiPeOptionalHeader.h; sourceTree = "<group>"; };
+		9B7D01112E764681006A10B6 /* EfiBind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiBind.h; sourceTree = "<group>"; };
+		9B7D01142E764681006A10B6 /* AppleFirmwareVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleFirmwareVariable.h; sourceTree = "<group>"; };
+		9B7D01162E764681006A10B6 /* Acpi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acpi.h; sourceTree = "<group>"; };
+		9B7D01182E764681006A10B6 /* AppleFileVaultVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleFileVaultVariable.h; sourceTree = "<group>"; };
+		9B7D011A2E764681006A10B6 /* AppleNVRAMVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleNVRAMVariable.h; sourceTree = "<group>"; };
+		9B7D011C2E764681006A10B6 /* AppleAcpiVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleAcpiVariable.h; sourceTree = "<group>"; };
+		9B7D011E2E764681006A10B6 /* SmBios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmBios.h; sourceTree = "<group>"; };
+		9B7D01202E764681006A10B6 /* AppleRamDmgDevicePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleRamDmgDevicePath.h; sourceTree = "<group>"; };
+		9B7D01222E764681006A10B6 /* AppleFirmwareFileName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleFirmwareFileName.h; sourceTree = "<group>"; };
+		9B7D01232E764681006A10B6 /* poppack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poppack.h; sourceTree = "<group>"; };
+		9B7D01242E764681006A10B6 /* EfiTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiTypes.h; sourceTree = "<group>"; };
+		9B7D01252E764681006A10B6 /* EfiPci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiPci.h; sourceTree = "<group>"; };
+		9B7D01262E764681006A10B6 /* EfiImageFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiImageFormat.h; sourceTree = "<group>"; };
+		9B7D01272E764681006A10B6 /* EfiCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiCommon.h; sourceTree = "<group>"; };
+		9B7D01282E764681006A10B6 /* EfiCapsule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiCapsule.h; sourceTree = "<group>"; };
+		9B7D01292E764681006A10B6 /* stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
+		9B7D012A2E764681006A10B6 /* EfiDevicePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiDevicePath.h; sourceTree = "<group>"; };
+		9B7D012B2E764681006A10B6 /* string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string.h; sourceTree = "<group>"; };
+		9B7D012D2E764681006A10B6 /* debug.props */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = debug.props; sourceTree = "<group>"; };
+		9B7D012F2E764681006A10B6 /* PlatformExpert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformExpert.h; sourceTree = "<group>"; };
+		9B7D01302E764681006A10B6 /* AcpiUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AcpiUtils.cpp; sourceTree = "<group>"; };
+		9B7D01312E764681006A10B6 /* boot.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = boot.vcxproj.filters; sourceTree = "<group>"; };
+		9B7D01322E764681006A10B6 /* DebugUsb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugUsb.h; sourceTree = "<group>"; };
+		9B7D01332E764681006A10B6 /* MiscUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiscUtils.h; sourceTree = "<group>"; };
+		9B7D01342E764681006A10B6 /* Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Console.h; sourceTree = "<group>"; };
+		9B7D01352E764681006A10B6 /* Memory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Memory.cpp; sourceTree = "<group>"; };
+		9B7D01362E764681006A10B6 /* MD5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MD5.cpp; sourceTree = "<group>"; };
+		9B7D01372E764681006A10B6 /* GuidDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidDefine.h; sourceTree = "<group>"; };
+		9B7D01382E764681006A10B6 /* Hibernate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hibernate.h; sourceTree = "<group>"; };
+		9B7D01392E764681006A10B6 /* RuntimeLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RuntimeLib.cpp; sourceTree = "<group>"; };
+		9B7D013A2E764681006A10B6 /* LoadDrivers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadDrivers.cpp; sourceTree = "<group>"; };
+		9B7D013B2E764681006A10B6 /* PanicDialogData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanicDialogData.h; sourceTree = "<group>"; };
+		9B7D013C2E764681006A10B6 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
+		9B7D013D2E764681006A10B6 /* PeImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PeImage.cpp; sourceTree = "<group>"; };
+		9B7D013E2E764681006A10B6 /* Hibernate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hibernate.cpp; sourceTree = "<group>"; };
+		9B7D013F2E764681006A10B6 /* PanicDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanicDialog.h; sourceTree = "<group>"; };
+		9B7D01402E764681006A10B6 /* BootArgs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BootArgs.cpp; sourceTree = "<group>"; };
+		9B7D01412E764681006A10B6 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		9B7D01422E764681006A10B6 /* boot.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = boot.vcxproj; sourceTree = "<group>"; };
+		9B7D01432E764681006A10B6 /* Base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Base64.cpp; sourceTree = "<group>"; };
+		9B7D01442E764681006A10B6 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		9B7D01452E764681006A10B6 /* GuidDefine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuidDefine.cpp; sourceTree = "<group>"; };
+		9B7D01462E764681006A10B6 /* Debug1394.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug1394.h; sourceTree = "<group>"; };
+		9B7D01472E764681006A10B6 /* BootDebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootDebugger.h; sourceTree = "<group>"; };
+		9B7D01492E764681006A10B6 /* DebugTrap.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = DebugTrap.asm; sourceTree = "<group>"; };
+		9B7D014A2E764681006A10B6 /* ArchDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchDefine.h; sourceTree = "<group>"; };
+		9B7D014B2E764681006A10B6 /* DebuggerUtilsX64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebuggerUtilsX64.cpp; sourceTree = "<group>"; };
+		9B7D014C2E764681006A10B6 /* PortRegisterIo.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = PortRegisterIo.asm; sourceTree = "<group>"; };
+		9B7D014D2E764681006A10B6 /* CompilerX64.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = CompilerX64.asm; sourceTree = "<group>"; };
+		9B7D014E2E764681006A10B6 /* ArchUtilsX64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArchUtilsX64.cpp; sourceTree = "<group>"; };
+		9B7D014F2E764681006A10B6 /* TransferRoutine.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = TransferRoutine.asm; sourceTree = "<group>"; };
+		9B7D01502E764681006A10B6 /* Common.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Common.inc; sourceTree = "<group>"; };
+		9B7D01512E764681006A10B6 /* AcpiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcpiUtils.h; sourceTree = "<group>"; };
+		9B7D01522E764681006A10B6 /* Console.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Console.cpp; sourceTree = "<group>"; };
+		9B7D01532E764681006A10B6 /* NetBootImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetBootImages.h; sourceTree = "<group>"; };
+		9B7D01542E764681006A10B6 /* efi_string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = efi_string.c; sourceTree = "<group>"; };
+		9B7D01552E764681006A10B6 /* PictData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictData.h; sourceTree = "<group>"; };
+		9B7D01562E764681006A10B6 /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		9B7D01572E764681006A10B6 /* Crc32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Crc32.cpp; sourceTree = "<group>"; };
+		9B7D01582E764681006A10B6 /* DeviceTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceTree.cpp; sourceTree = "<group>"; };
+		9B7D01592E764681006A10B6 /* SHA256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHA256.h; sourceTree = "<group>"; };
+		9B7D015A2E764681006A10B6 /* MemoryMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryMap.cpp; sourceTree = "<group>"; };
+		9B7D015B2E764681006A10B6 /* PeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeImage.h; sourceTree = "<group>"; };
+		9B7D015C2E764681006A10B6 /* Options.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Options.cpp; sourceTree = "<group>"; };
+		9B7D015D2E764681006A10B6 /* FileIo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIo.cpp; sourceTree = "<group>"; };
+		9B7D015E2E764681006A10B6 /* RuntimeLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeLib.h; sourceTree = "<group>"; };
+		9B7D015F2E764681006A10B6 /* Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Options.h; sourceTree = "<group>"; };
+		9B7D01602E764681006A10B6 /* BootDebuggerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootDebuggerPrivate.h; sourceTree = "<group>"; };
+		9B7D01612E764681006A10B6 /* BootArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootArgs.h; sourceTree = "<group>"; };
+		9B7D01622E764681006A10B6 /* LoadKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadKernel.h; sourceTree = "<group>"; };
+		9B7D01632E764681006A10B6 /* LoadKernel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadKernel.cpp; sourceTree = "<group>"; };
+		9B7D01642E764681006A10B6 /* LoadDrivers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadDrivers.h; sourceTree = "<group>"; };
+		9B7D01652E764681006A10B6 /* ArchUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchUtils.h; sourceTree = "<group>"; };
+		9B7D01662E764681006A10B6 /* MemoryMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryMap.h; sourceTree = "<group>"; };
+		9B7D01672E764681006A10B6 /* MiscUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MiscUtils.cpp; sourceTree = "<group>"; };
+		9B7D01682E764681006A10B6 /* DevicePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePath.h; sourceTree = "<group>"; };
+		9B7D01692E764681006A10B6 /* DevicePath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DevicePath.cpp; sourceTree = "<group>"; };
+		9B7D016A2E764681006A10B6 /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
+		9B7D016B2E764681006A10B6 /* SHA256.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SHA256.cpp; sourceTree = "<group>"; };
+		9B7D016D2E764681006A10B6 /* ThunkCode32.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = ThunkCode32.asm; sourceTree = "<group>"; };
+		9B7D016E2E764681006A10B6 /* ArchDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchDefine.h; sourceTree = "<group>"; };
+		9B7D016F2E764681006A10B6 /* ArchUtilsX86.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArchUtilsX86.cpp; sourceTree = "<group>"; };
+		9B7D01702E764681006A10B6 /* ThunkCode64.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = ThunkCode64.asm; sourceTree = "<group>"; };
+		9B7D01712E764681006A10B6 /* DebuggerUtilsX86.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebuggerUtilsX86.cpp; sourceTree = "<group>"; };
+		9B7D01722E764681006A10B6 /* CompilerX86.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompilerX86.cpp; sourceTree = "<group>"; };
+		9B7D01732E764681006A10B6 /* Thunk64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Thunk64.cpp; sourceTree = "<group>"; };
+		9B7D01742E764681006A10B6 /* AppleLogoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleLogoData.h; sourceTree = "<group>"; };
+		9B7D01752E764681006A10B6 /* Debug1394.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Debug1394.cpp; sourceTree = "<group>"; };
+		9B7D01762E764681006A10B6 /* FileIo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIo.h; sourceTree = "<group>"; };
+		9B7D01772E764681006A10B6 /* MachO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachO.h; sourceTree = "<group>"; };
+		9B7D01782E764681006A10B6 /* Memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
+		9B7D01792E764681006A10B6 /* MachO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MachO.cpp; sourceTree = "<group>"; };
+		9B7D017A2E764681006A10B6 /* NetBoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetBoot.h; sourceTree = "<group>"; };
+		9B7D017B2E764681006A10B6 /* FileVault.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileVault.cpp; sourceTree = "<group>"; };
+		9B7D017C2E764681006A10B6 /* DeviceTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTree.h; sourceTree = "<group>"; };
+		9B7D017D2E764681006A10B6 /* PlatformExpert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlatformExpert.cpp; sourceTree = "<group>"; };
+		9B7D017E2E764681006A10B6 /* StdAfx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StdAfx.cpp; sourceTree = "<group>"; };
+		9B7D017F2E764681006A10B6 /* NetBoot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetBoot.cpp; sourceTree = "<group>"; };
+		9B7D01802E764681006A10B6 /* Crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crc32.h; sourceTree = "<group>"; };
+		9B7D01812E764681006A10B6 /* FileVault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileVault.h; sourceTree = "<group>"; };
+		9B7D01822E764681006A10B6 /* BootDebugger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BootDebugger.cpp; sourceTree = "<group>"; };
+		9B7D01832E764681006A10B6 /* PanicDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PanicDialog.cpp; sourceTree = "<group>"; };
+		9B7D01842E764681006A10B6 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
+		9B7D01852E764681006A10B6 /* DebugUsb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugUsb.cpp; sourceTree = "<group>"; };
+		9B7D01862E764681006A10B6 /* release.props */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = release.props; sourceTree = "<group>"; };
+		9B7D01872E764681006A10B6 /* boot.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = boot.sln; sourceTree = "<group>"; };
+		9B7D01882E764681006A10B6 /* common.props */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = common.props; sourceTree = "<group>"; };
+		9B7D018A2E764681006A10B6 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		9B7D018B2E764681006A10B6 /* rijndael.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = rijndael.vcxproj; sourceTree = "<group>"; };
+		9B7D018C2E764681006A10B6 /* aesxts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesxts.h; sourceTree = "<group>"; };
+		9B7D018D2E764681006A10B6 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		9B7D018E2E764681006A10B6 /* rijndael.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = rijndael.vcxproj.filters; sourceTree = "<group>"; };
+		9B7D018F2E764681006A10B6 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		9B7D01902E764681006A10B6 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		9B7D01912E764681006A10B6 /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
+		9B7D01922E764681006A10B6 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		9B7D01932E764681006A10B6 /* aes_modes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_modes.c; sourceTree = "<group>"; };
+		9B7D01942E764681006A10B6 /* aesxts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aesxts.c; sourceTree = "<group>"; };
+		9B7D01952E764681006A10B6 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		9B7D01962E764681006A10B6 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		9B7D01972E764681006A10B6 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B7D00AD2E7644E6006A10B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B7D00A72E7644E6006A10B6 = {
+			isa = PBXGroup;
+			children = (
+				9B7D00BA2E764680006A10B6 /* sdk */,
+				9B7D012C2E764681006A10B6 /* src */,
+				9B7D00B12E7644E6006A10B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B7D00B12E7644E6006A10B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00B02E7644E6006A10B6 /* macosxbootloader */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B7D00BA2E764680006A10B6 /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00BB2E764680006A10B6 /* include */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		9B7D00BB2E764680006A10B6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00BC2E764680006A10B6 /* stdlib.h */,
+				9B7D00BD2E764680006A10B6 /* limits.h */,
+				9B7D00BE2E764680006A10B6 /* x64 */,
+				9B7D00C12E764680006A10B6 /* EfiFirmwareVolume.h */,
+				9B7D00C22E764680006A10B6 /* IndustryStandard */,
+				9B7D00CD2E764680006A10B6 /* stddef.h */,
+				9B7D00CE2E764680006A10B6 /* EfiFirmwareFileSystem.h */,
+				9B7D00CF2E764680006A10B6 /* EfiImage.h */,
+				9B7D00D02E764680006A10B6 /* pshpack1.h */,
+				9B7D00D12E764680006A10B6 /* Protocol */,
+				9B7D010A2E764681006A10B6 /* EfiError.h */,
+				9B7D010B2E764681006A10B6 /* EfiApi.h */,
+				9B7D010C2E764681006A10B6 /* EfiStatusCode.h */,
+				9B7D010D2E764681006A10B6 /* EfiFirmwareVolumeHeader.h */,
+				9B7D010E2E764681006A10B6 /* EfiStdArg.h */,
+				9B7D010F2E764681006A10B6 /* x86 */,
+				9B7D01122E764681006A10B6 /* Guid */,
+				9B7D01232E764681006A10B6 /* poppack.h */,
+				9B7D01242E764681006A10B6 /* EfiTypes.h */,
+				9B7D01252E764681006A10B6 /* EfiPci.h */,
+				9B7D01262E764681006A10B6 /* EfiImageFormat.h */,
+				9B7D01272E764681006A10B6 /* EfiCommon.h */,
+				9B7D01282E764681006A10B6 /* EfiCapsule.h */,
+				9B7D01292E764681006A10B6 /* stdint.h */,
+				9B7D012A2E764681006A10B6 /* EfiDevicePath.h */,
+				9B7D012B2E764681006A10B6 /* string.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9B7D00BE2E764680006A10B6 /* x64 */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00BF2E764680006A10B6 /* EfiPeOptionalHeader.h */,
+				9B7D00C02E764680006A10B6 /* EfiBind.h */,
+			);
+			path = x64;
+			sourceTree = "<group>";
+		};
+		9B7D00C22E764680006A10B6 /* IndustryStandard */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00C32E764680006A10B6 /* AcpiCommon.h */,
+				9B7D00C42E764680006A10B6 /* pci22.h */,
+				9B7D00C52E764680006A10B6 /* Acpi.h */,
+				9B7D00C62E764680006A10B6 /* Acpi1_0.h */,
+				9B7D00C72E764680006A10B6 /* Acpi3_0.h */,
+				9B7D00C82E764680006A10B6 /* pci23.h */,
+				9B7D00C92E764680006A10B6 /* Acpi2_0.h */,
+				9B7D00CA2E764680006A10B6 /* Smbios.h */,
+				9B7D00CB2E764680006A10B6 /* pci.h */,
+				9B7D00CC2E764680006A10B6 /* pci30.h */,
+			);
+			path = IndustryStandard;
+			sourceTree = "<group>";
+		};
+		9B7D00D12E764680006A10B6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00D22E764680006A10B6 /* AppleNetBoot */,
+				9B7D00D42E764680006A10B6 /* SimplePointer */,
+				9B7D00D62E764681006A10B6 /* AppleSystemInfo */,
+				9B7D00D82E764681006A10B6 /* DiskIO */,
+				9B7D00DA2E764681006A10B6 /* SimpleTextOut */,
+				9B7D00DC2E764681006A10B6 /* AppleFirmwarePassword */,
+				9B7D00DE2E764681006A10B6 /* ConsoleControl */,
+				9B7D00E02E764681006A10B6 /* AppleSMC */,
+				9B7D00E22E764681006A10B6 /* SimpleFileSystem */,
+				9B7D00E42E764681006A10B6 /* AppleKeyState */,
+				9B7D00E62E764681006A10B6 /* FirmwareVolume */,
+				9B7D00E82E764681006A10B6 /* AppleDiskIo */,
+				9B7D00EA2E764681006A10B6 /* DataHub */,
+				9B7D00EC2E764681006A10B6 /* LoadFile */,
+				9B7D00EE2E764681006A10B6 /* SimpleTextIn */,
+				9B7D00F02E764681006A10B6 /* AppleGraphInfo */,
+				9B7D00F22E764681006A10B6 /* FileInfo */,
+				9B7D00F42E764681006A10B6 /* FirmwareVolumeDispatch */,
+				9B7D00F62E764681006A10B6 /* AppleDeviceProperty */,
+				9B7D00F82E764681006A10B6 /* DevicePath */,
+				9B7D00FA2E764681006A10B6 /* AppleGraphConfig */,
+				9B7D00FC2E764681006A10B6 /* PciIo */,
+				9B7D00FE2E764681006A10B6 /* UgaDraw */,
+				9B7D01002E764681006A10B6 /* AppleDeviceControl */,
+				9B7D01022E764681006A10B6 /* LoadedImage */,
+				9B7D01042E764681006A10B6 /* BlockIO */,
+				9B7D01062E764681006A10B6 /* GraphicsOutput */,
+				9B7D01082E764681006A10B6 /* AppleImageCodec */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9B7D00D22E764680006A10B6 /* AppleNetBoot */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00D32E764680006A10B6 /* AppleNetBoot.h */,
+			);
+			path = AppleNetBoot;
+			sourceTree = "<group>";
+		};
+		9B7D00D42E764680006A10B6 /* SimplePointer */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00D52E764681006A10B6 /* SimplePointer.h */,
+			);
+			path = SimplePointer;
+			sourceTree = "<group>";
+		};
+		9B7D00D62E764681006A10B6 /* AppleSystemInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00D72E764681006A10B6 /* AppleSystemInfo.h */,
+			);
+			path = AppleSystemInfo;
+			sourceTree = "<group>";
+		};
+		9B7D00D82E764681006A10B6 /* DiskIO */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00D92E764681006A10B6 /* DiskIo.h */,
+			);
+			path = DiskIO;
+			sourceTree = "<group>";
+		};
+		9B7D00DA2E764681006A10B6 /* SimpleTextOut */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00DB2E764681006A10B6 /* SimpleTextOut.h */,
+			);
+			path = SimpleTextOut;
+			sourceTree = "<group>";
+		};
+		9B7D00DC2E764681006A10B6 /* AppleFirmwarePassword */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00DD2E764681006A10B6 /* AppleFirmwarePassword.h */,
+			);
+			path = AppleFirmwarePassword;
+			sourceTree = "<group>";
+		};
+		9B7D00DE2E764681006A10B6 /* ConsoleControl */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00DF2E764681006A10B6 /* ConsoleControl.h */,
+			);
+			path = ConsoleControl;
+			sourceTree = "<group>";
+		};
+		9B7D00E02E764681006A10B6 /* AppleSMC */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00E12E764681006A10B6 /* AppleSMC.h */,
+			);
+			path = AppleSMC;
+			sourceTree = "<group>";
+		};
+		9B7D00E22E764681006A10B6 /* SimpleFileSystem */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00E32E764681006A10B6 /* SimpleFileSystem.h */,
+			);
+			path = SimpleFileSystem;
+			sourceTree = "<group>";
+		};
+		9B7D00E42E764681006A10B6 /* AppleKeyState */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00E52E764681006A10B6 /* AppleKeyState.h */,
+			);
+			path = AppleKeyState;
+			sourceTree = "<group>";
+		};
+		9B7D00E62E764681006A10B6 /* FirmwareVolume */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00E72E764681006A10B6 /* FirmwareVolume.h */,
+			);
+			path = FirmwareVolume;
+			sourceTree = "<group>";
+		};
+		9B7D00E82E764681006A10B6 /* AppleDiskIo */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00E92E764681006A10B6 /* AppleDiskIo.h */,
+			);
+			path = AppleDiskIo;
+			sourceTree = "<group>";
+		};
+		9B7D00EA2E764681006A10B6 /* DataHub */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00EB2E764681006A10B6 /* DataHub.h */,
+			);
+			path = DataHub;
+			sourceTree = "<group>";
+		};
+		9B7D00EC2E764681006A10B6 /* LoadFile */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00ED2E764681006A10B6 /* LoadFile.h */,
+			);
+			path = LoadFile;
+			sourceTree = "<group>";
+		};
+		9B7D00EE2E764681006A10B6 /* SimpleTextIn */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00EF2E764681006A10B6 /* SimpleTextIn.h */,
+			);
+			path = SimpleTextIn;
+			sourceTree = "<group>";
+		};
+		9B7D00F02E764681006A10B6 /* AppleGraphInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00F12E764681006A10B6 /* AppleGraphInfo.h */,
+			);
+			path = AppleGraphInfo;
+			sourceTree = "<group>";
+		};
+		9B7D00F22E764681006A10B6 /* FileInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00F32E764681006A10B6 /* FileInfo.h */,
+			);
+			path = FileInfo;
+			sourceTree = "<group>";
+		};
+		9B7D00F42E764681006A10B6 /* FirmwareVolumeDispatch */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00F52E764681006A10B6 /* FirmwareVolumeDispatch.h */,
+			);
+			path = FirmwareVolumeDispatch;
+			sourceTree = "<group>";
+		};
+		9B7D00F62E764681006A10B6 /* AppleDeviceProperty */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00F72E764681006A10B6 /* AppleDeviceProperty.h */,
+			);
+			path = AppleDeviceProperty;
+			sourceTree = "<group>";
+		};
+		9B7D00F82E764681006A10B6 /* DevicePath */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00F92E764681006A10B6 /* DevicePath.h */,
+			);
+			path = DevicePath;
+			sourceTree = "<group>";
+		};
+		9B7D00FA2E764681006A10B6 /* AppleGraphConfig */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00FB2E764681006A10B6 /* AppleGraphConfig.h */,
+			);
+			path = AppleGraphConfig;
+			sourceTree = "<group>";
+		};
+		9B7D00FC2E764681006A10B6 /* PciIo */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00FD2E764681006A10B6 /* PciIo.h */,
+			);
+			path = PciIo;
+			sourceTree = "<group>";
+		};
+		9B7D00FE2E764681006A10B6 /* UgaDraw */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D00FF2E764681006A10B6 /* UgaDraw.h */,
+			);
+			path = UgaDraw;
+			sourceTree = "<group>";
+		};
+		9B7D01002E764681006A10B6 /* AppleDeviceControl */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01012E764681006A10B6 /* AppleDeviceControl.h */,
+			);
+			path = AppleDeviceControl;
+			sourceTree = "<group>";
+		};
+		9B7D01022E764681006A10B6 /* LoadedImage */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01032E764681006A10B6 /* LoadedImage.h */,
+			);
+			path = LoadedImage;
+			sourceTree = "<group>";
+		};
+		9B7D01042E764681006A10B6 /* BlockIO */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01052E764681006A10B6 /* BlockIO.h */,
+			);
+			path = BlockIO;
+			sourceTree = "<group>";
+		};
+		9B7D01062E764681006A10B6 /* GraphicsOutput */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01072E764681006A10B6 /* GraphicsOutput.h */,
+			);
+			path = GraphicsOutput;
+			sourceTree = "<group>";
+		};
+		9B7D01082E764681006A10B6 /* AppleImageCodec */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01092E764681006A10B6 /* AppleImageCodec.h */,
+			);
+			path = AppleImageCodec;
+			sourceTree = "<group>";
+		};
+		9B7D010F2E764681006A10B6 /* x86 */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01102E764681006A10B6 /* EfiPeOptionalHeader.h */,
+				9B7D01112E764681006A10B6 /* EfiBind.h */,
+			);
+			path = x86;
+			sourceTree = "<group>";
+		};
+		9B7D01122E764681006A10B6 /* Guid */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01132E764681006A10B6 /* AppleFirmwareVariable */,
+				9B7D01152E764681006A10B6 /* Acpi */,
+				9B7D01172E764681006A10B6 /* AppleFileVaultVariable */,
+				9B7D01192E764681006A10B6 /* AppleNVRAMVariable */,
+				9B7D011B2E764681006A10B6 /* AppleAcpiVariable */,
+				9B7D011D2E764681006A10B6 /* Smbios */,
+				9B7D011F2E764681006A10B6 /* AppleRamDmgDevicePath */,
+				9B7D01212E764681006A10B6 /* AppleFirmwareFileName */,
+			);
+			path = Guid;
+			sourceTree = "<group>";
+		};
+		9B7D01132E764681006A10B6 /* AppleFirmwareVariable */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01142E764681006A10B6 /* AppleFirmwareVariable.h */,
+			);
+			path = AppleFirmwareVariable;
+			sourceTree = "<group>";
+		};
+		9B7D01152E764681006A10B6 /* Acpi */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01162E764681006A10B6 /* Acpi.h */,
+			);
+			path = Acpi;
+			sourceTree = "<group>";
+		};
+		9B7D01172E764681006A10B6 /* AppleFileVaultVariable */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01182E764681006A10B6 /* AppleFileVaultVariable.h */,
+			);
+			path = AppleFileVaultVariable;
+			sourceTree = "<group>";
+		};
+		9B7D01192E764681006A10B6 /* AppleNVRAMVariable */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D011A2E764681006A10B6 /* AppleNVRAMVariable.h */,
+			);
+			path = AppleNVRAMVariable;
+			sourceTree = "<group>";
+		};
+		9B7D011B2E764681006A10B6 /* AppleAcpiVariable */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D011C2E764681006A10B6 /* AppleAcpiVariable.h */,
+			);
+			path = AppleAcpiVariable;
+			sourceTree = "<group>";
+		};
+		9B7D011D2E764681006A10B6 /* Smbios */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D011E2E764681006A10B6 /* SmBios.h */,
+			);
+			path = Smbios;
+			sourceTree = "<group>";
+		};
+		9B7D011F2E764681006A10B6 /* AppleRamDmgDevicePath */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01202E764681006A10B6 /* AppleRamDmgDevicePath.h */,
+			);
+			path = AppleRamDmgDevicePath;
+			sourceTree = "<group>";
+		};
+		9B7D01212E764681006A10B6 /* AppleFirmwareFileName */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01222E764681006A10B6 /* AppleFirmwareFileName.h */,
+			);
+			path = AppleFirmwareFileName;
+			sourceTree = "<group>";
+		};
+		9B7D012C2E764681006A10B6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D012E2E764681006A10B6 /* boot */,
+				9B7D01872E764681006A10B6 /* boot.sln */,
+				9B7D01882E764681006A10B6 /* common.props */,
+				9B7D012D2E764681006A10B6 /* debug.props */,
+				9B7D01862E764681006A10B6 /* release.props */,
+				9B7D01892E764681006A10B6 /* rijndael */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9B7D012E2E764681006A10B6 /* boot */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01302E764681006A10B6 /* AcpiUtils.cpp */,
+				9B7D01512E764681006A10B6 /* AcpiUtils.h */,
+				9B7D01742E764681006A10B6 /* AppleLogoData.h */,
+				9B7D01652E764681006A10B6 /* ArchUtils.h */,
+				9B7D01432E764681006A10B6 /* Base64.cpp */,
+				9B7D01412E764681006A10B6 /* Base64.h */,
+				9B7D01422E764681006A10B6 /* boot.vcxproj */,
+				9B7D01312E764681006A10B6 /* boot.vcxproj.filters */,
+				9B7D01402E764681006A10B6 /* BootArgs.cpp */,
+				9B7D01612E764681006A10B6 /* BootArgs.h */,
+				9B7D01822E764681006A10B6 /* BootDebugger.cpp */,
+				9B7D01472E764681006A10B6 /* BootDebugger.h */,
+				9B7D01602E764681006A10B6 /* BootDebuggerPrivate.h */,
+				9B7D016A2E764681006A10B6 /* Config.cpp */,
+				9B7D01442E764681006A10B6 /* Config.h */,
+				9B7D01522E764681006A10B6 /* Console.cpp */,
+				9B7D01342E764681006A10B6 /* Console.h */,
+				9B7D01572E764681006A10B6 /* Crc32.cpp */,
+				9B7D01802E764681006A10B6 /* Crc32.h */,
+				9B7D01752E764681006A10B6 /* Debug1394.cpp */,
+				9B7D01462E764681006A10B6 /* Debug1394.h */,
+				9B7D01852E764681006A10B6 /* DebugUsb.cpp */,
+				9B7D01322E764681006A10B6 /* DebugUsb.h */,
+				9B7D01692E764681006A10B6 /* DevicePath.cpp */,
+				9B7D01682E764681006A10B6 /* DevicePath.h */,
+				9B7D01582E764681006A10B6 /* DeviceTree.cpp */,
+				9B7D017C2E764681006A10B6 /* DeviceTree.h */,
+				9B7D01542E764681006A10B6 /* efi_string.c */,
+				9B7D015D2E764681006A10B6 /* FileIo.cpp */,
+				9B7D01762E764681006A10B6 /* FileIo.h */,
+				9B7D017B2E764681006A10B6 /* FileVault.cpp */,
+				9B7D01812E764681006A10B6 /* FileVault.h */,
+				9B7D01452E764681006A10B6 /* GuidDefine.cpp */,
+				9B7D01372E764681006A10B6 /* GuidDefine.h */,
+				9B7D013E2E764681006A10B6 /* Hibernate.cpp */,
+				9B7D01382E764681006A10B6 /* Hibernate.h */,
+				9B7D013A2E764681006A10B6 /* LoadDrivers.cpp */,
+				9B7D01642E764681006A10B6 /* LoadDrivers.h */,
+				9B7D01632E764681006A10B6 /* LoadKernel.cpp */,
+				9B7D01622E764681006A10B6 /* LoadKernel.h */,
+				9B7D01792E764681006A10B6 /* MachO.cpp */,
+				9B7D01772E764681006A10B6 /* MachO.h */,
+				9B7D01842E764681006A10B6 /* Main.cpp */,
+				9B7D01362E764681006A10B6 /* MD5.cpp */,
+				9B7D01562E764681006A10B6 /* MD5.h */,
+				9B7D01352E764681006A10B6 /* Memory.cpp */,
+				9B7D01782E764681006A10B6 /* Memory.h */,
+				9B7D015A2E764681006A10B6 /* MemoryMap.cpp */,
+				9B7D01662E764681006A10B6 /* MemoryMap.h */,
+				9B7D01672E764681006A10B6 /* MiscUtils.cpp */,
+				9B7D01332E764681006A10B6 /* MiscUtils.h */,
+				9B7D017F2E764681006A10B6 /* NetBoot.cpp */,
+				9B7D017A2E764681006A10B6 /* NetBoot.h */,
+				9B7D01532E764681006A10B6 /* NetBootImages.h */,
+				9B7D015C2E764681006A10B6 /* Options.cpp */,
+				9B7D015F2E764681006A10B6 /* Options.h */,
+				9B7D01832E764681006A10B6 /* PanicDialog.cpp */,
+				9B7D013F2E764681006A10B6 /* PanicDialog.h */,
+				9B7D013B2E764681006A10B6 /* PanicDialogData.h */,
+				9B7D013D2E764681006A10B6 /* PeImage.cpp */,
+				9B7D015B2E764681006A10B6 /* PeImage.h */,
+				9B7D01552E764681006A10B6 /* PictData.h */,
+				9B7D017D2E764681006A10B6 /* PlatformExpert.cpp */,
+				9B7D012F2E764681006A10B6 /* PlatformExpert.h */,
+				9B7D01392E764681006A10B6 /* RuntimeLib.cpp */,
+				9B7D015E2E764681006A10B6 /* RuntimeLib.h */,
+				9B7D016B2E764681006A10B6 /* SHA256.cpp */,
+				9B7D01592E764681006A10B6 /* SHA256.h */,
+				9B7D017E2E764681006A10B6 /* StdAfx.cpp */,
+				9B7D013C2E764681006A10B6 /* StdAfx.h */,
+				9B7D01482E764681006A10B6 /* x64 */,
+				9B7D016C2E764681006A10B6 /* x86 */,
+			);
+			path = boot;
+			sourceTree = "<group>";
+		};
+		9B7D01482E764681006A10B6 /* x64 */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D014A2E764681006A10B6 /* ArchDefine.h */,
+				9B7D014E2E764681006A10B6 /* ArchUtilsX64.cpp */,
+				9B7D01502E764681006A10B6 /* Common.inc */,
+				9B7D014D2E764681006A10B6 /* CompilerX64.asm */,
+				9B7D014B2E764681006A10B6 /* DebuggerUtilsX64.cpp */,
+				9B7D01492E764681006A10B6 /* DebugTrap.asm */,
+				9B7D014C2E764681006A10B6 /* PortRegisterIo.asm */,
+				9B7D014F2E764681006A10B6 /* TransferRoutine.asm */,
+			);
+			path = x64;
+			sourceTree = "<group>";
+		};
+		9B7D016C2E764681006A10B6 /* x86 */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D016E2E764681006A10B6 /* ArchDefine.h */,
+				9B7D016F2E764681006A10B6 /* ArchUtilsX86.cpp */,
+				9B7D01722E764681006A10B6 /* CompilerX86.cpp */,
+				9B7D01712E764681006A10B6 /* DebuggerUtilsX86.cpp */,
+				9B7D01732E764681006A10B6 /* Thunk64.cpp */,
+				9B7D016D2E764681006A10B6 /* ThunkCode32.asm */,
+				9B7D01702E764681006A10B6 /* ThunkCode64.asm */,
+			);
+			path = x86;
+			sourceTree = "<group>";
+		};
+		9B7D01892E764681006A10B6 /* rijndael */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D01932E764681006A10B6 /* aes_modes.c */,
+				9B7D01912E764681006A10B6 /* aes_via_ace.h */,
+				9B7D01962E764681006A10B6 /* aes.h */,
+				9B7D018F2E764681006A10B6 /* aescrypt.c */,
+				9B7D018A2E764681006A10B6 /* aeskey.c */,
+				9B7D01902E764681006A10B6 /* aesopt.h */,
+				9B7D01972E764681006A10B6 /* aestab.c */,
+				9B7D018D2E764681006A10B6 /* aestab.h */,
+				9B7D01942E764681006A10B6 /* aesxts.c */,
+				9B7D018C2E764681006A10B6 /* aesxts.h */,
+				9B7D01952E764681006A10B6 /* brg_endian.h */,
+				9B7D01922E764681006A10B6 /* brg_types.h */,
+				9B7D018B2E764681006A10B6 /* rijndael.vcxproj */,
+				9B7D018E2E764681006A10B6 /* rijndael.vcxproj.filters */,
+			);
+			path = rijndael;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B7D00AF2E7644E6006A10B6 /* macosxbootloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B7D00B72E7644E6006A10B6 /* Build configuration list for PBXNativeTarget "macosxbootloader" */;
+			buildPhases = (
+				9B7D00AC2E7644E6006A10B6 /* Sources */,
+				9B7D00AD2E7644E6006A10B6 /* Frameworks */,
+				9B7D00AE2E7644E6006A10B6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macosxbootloader;
+			productName = macosxbootloader;
+			productReference = 9B7D00B02E7644E6006A10B6 /* macosxbootloader */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B7D00A82E7644E6006A10B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					9B7D00AF2E7644E6006A10B6 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 9B7D00AB2E7644E6006A10B6 /* Build configuration list for PBXProject "macosxbootloader" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B7D00A72E7644E6006A10B6;
+			productRefGroup = 9B7D00B12E7644E6006A10B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B7D00AF2E7644E6006A10B6 /* macosxbootloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B7D00AC2E7644E6006A10B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7D01BE2E764682006A10B6 /* PlatformExpert.cpp in Sources */,
+				9B7D01BC2E764682006A10B6 /* MachO.cpp in Sources */,
+				9B7D019A2E764682006A10B6 /* MD5.cpp in Sources */,
+				9B7D01AD2E764682006A10B6 /* MemoryMap.cpp in Sources */,
+				9B7D01B52E764682006A10B6 /* ThunkCode32.asm in Sources */,
+				9B7D01A32E764682006A10B6 /* DebuggerUtilsX64.cpp in Sources */,
+				9B7D01C32E764682006A10B6 /* Main.cpp in Sources */,
+				9B7D01B12E764682006A10B6 /* MiscUtils.cpp in Sources */,
+				9B7D01AF2E764682006A10B6 /* FileIo.cpp in Sources */,
+				9B7D01A22E764682006A10B6 /* DebugTrap.asm in Sources */,
+				9B7D01A12E764682006A10B6 /* GuidDefine.cpp in Sources */,
+				9B7D01C92E764682006A10B6 /* aestab.c in Sources */,
+				9B7D01AC2E764682006A10B6 /* DeviceTree.cpp in Sources */,
+				9B7D01AA2E764682006A10B6 /* efi_string.c in Sources */,
+				9B7D01BB2E764682006A10B6 /* Debug1394.cpp in Sources */,
+				9B7D01A42E764682006A10B6 /* PortRegisterIo.asm in Sources */,
+				9B7D01992E764682006A10B6 /* Memory.cpp in Sources */,
+				9B7D01B42E764682006A10B6 /* SHA256.cpp in Sources */,
+				9B7D01B72E764682006A10B6 /* ThunkCode64.asm in Sources */,
+				9B7D019C2E764682006A10B6 /* LoadDrivers.cpp in Sources */,
+				9B7D01A62E764682006A10B6 /* ArchUtilsX64.cpp in Sources */,
+				9B7D01B32E764682006A10B6 /* Config.cpp in Sources */,
+				9B7D01B62E764682006A10B6 /* ArchUtilsX86.cpp in Sources */,
+				9B7D01A52E764682006A10B6 /* CompilerX64.asm in Sources */,
+				9B7D01B02E764682006A10B6 /* LoadKernel.cpp in Sources */,
+				9B7D01A92E764682006A10B6 /* Console.cpp in Sources */,
+				9B7D01A02E764682006A10B6 /* Base64.cpp in Sources */,
+				9B7D01B82E764682006A10B6 /* DebuggerUtilsX86.cpp in Sources */,
+				9B7D019B2E764682006A10B6 /* RuntimeLib.cpp in Sources */,
+				9B7D01C72E764682006A10B6 /* aes_modes.c in Sources */,
+				9B7D01BA2E764682006A10B6 /* Thunk64.cpp in Sources */,
+				9B7D01A82E764682006A10B6 /* Common.inc in Sources */,
+				9B7D019D2E764682006A10B6 /* PeImage.cpp in Sources */,
+				9B7D01C82E764682006A10B6 /* aesxts.c in Sources */,
+				9B7D01B22E764682006A10B6 /* DevicePath.cpp in Sources */,
+				9B7D01BD2E764682006A10B6 /* FileVault.cpp in Sources */,
+				9B7D01AB2E764682006A10B6 /* Crc32.cpp in Sources */,
+				9B7D01C02E764682006A10B6 /* NetBoot.cpp in Sources */,
+				9B7D01C52E764682006A10B6 /* aeskey.c in Sources */,
+				9B7D01C12E764682006A10B6 /* BootDebugger.cpp in Sources */,
+				9B7D01982E764682006A10B6 /* AcpiUtils.cpp in Sources */,
+				9B7D01C62E764682006A10B6 /* aescrypt.c in Sources */,
+				9B7D01B92E764682006A10B6 /* CompilerX86.cpp in Sources */,
+				9B7D01AE2E764682006A10B6 /* Options.cpp in Sources */,
+				9B7D01C42E764682006A10B6 /* DebugUsb.cpp in Sources */,
+				9B7D01A72E764682006A10B6 /* TransferRoutine.asm in Sources */,
+				9B7D01BF2E764682006A10B6 /* StdAfx.cpp in Sources */,
+				9B7D019F2E764682006A10B6 /* BootArgs.cpp in Sources */,
+				9B7D019E2E764682006A10B6 /* Hibernate.cpp in Sources */,
+				9B7D01C22E764682006A10B6 /* PanicDialog.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9B7D00B52E7644E6006A10B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9B7D00B62E7644E6006A10B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9B7D00B82E7644E6006A10B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R3F7G5M76J;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9B7D00B92E7644E6006A10B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R3F7G5M76J;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B7D00AB2E7644E6006A10B6 /* Build configuration list for PBXProject "macosxbootloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B7D00B52E7644E6006A10B6 /* Debug */,
+				9B7D00B62E7644E6006A10B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B7D00B72E7644E6006A10B6 /* Build configuration list for PBXNativeTarget "macosxbootloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B7D00B82E7644E6006A10B6 /* Debug */,
+				9B7D00B92E7644E6006A10B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B7D00A82E7644E6006A10B6 /* Project object */;
+}

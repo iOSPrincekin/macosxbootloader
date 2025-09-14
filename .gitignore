@@ -2,3 +2,8 @@
 .git
 
 
+# Xcode
+build/
+ipa/
+xcuserdata/
+xcshareddata/
