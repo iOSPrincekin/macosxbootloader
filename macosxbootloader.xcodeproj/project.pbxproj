@@ -25,7 +25,6 @@
 		9B7D01A72E764682006A10B6 /* TransferRoutine.asm in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D014F2E764681006A10B6 /* TransferRoutine.asm */; };
 		9B7D01A82E764682006A10B6 /* Common.inc in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01502E764681006A10B6 /* Common.inc */; };
 		9B7D01A92E764682006A10B6 /* Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01522E764681006A10B6 /* Console.cpp */; };
-		9B7D01AA2E764682006A10B6 /* efi_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01542E764681006A10B6 /* efi_string.c */; };
 		9B7D01AB2E764682006A10B6 /* Crc32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01572E764681006A10B6 /* Crc32.cpp */; };
 		9B7D01AC2E764682006A10B6 /* DeviceTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D01582E764681006A10B6 /* DeviceTree.cpp */; };
 		9B7D01AD2E764682006A10B6 /* MemoryMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D015A2E764681006A10B6 /* MemoryMap.cpp */; };
@@ -73,8 +72,6 @@
 
 /* Begin PBXFileReference section */
 		9B7D00B02E7644E6006A10B6 /* macosxbootloader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = macosxbootloader; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B7D00BC2E764680006A10B6 /* stdlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdlib.h; sourceTree = "<group>"; };
-		9B7D00BD2E764680006A10B6 /* limits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = limits.h; sourceTree = "<group>"; };
 		9B7D00BF2E764680006A10B6 /* EfiPeOptionalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiPeOptionalHeader.h; sourceTree = "<group>"; };
 		9B7D00C02E764680006A10B6 /* EfiBind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiBind.h; sourceTree = "<group>"; };
 		9B7D00C12E764680006A10B6 /* EfiFirmwareVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiFirmwareVolume.h; sourceTree = "<group>"; };
@@ -88,10 +85,8 @@
 		9B7D00CA2E764680006A10B6 /* Smbios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Smbios.h; sourceTree = "<group>"; };
 		9B7D00CB2E764680006A10B6 /* pci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pci.h; sourceTree = "<group>"; };
 		9B7D00CC2E764680006A10B6 /* pci30.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pci30.h; sourceTree = "<group>"; };
-		9B7D00CD2E764680006A10B6 /* stddef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stddef.h; sourceTree = "<group>"; };
 		9B7D00CE2E764680006A10B6 /* EfiFirmwareFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiFirmwareFileSystem.h; sourceTree = "<group>"; };
 		9B7D00CF2E764680006A10B6 /* EfiImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiImage.h; sourceTree = "<group>"; };
-		9B7D00D02E764680006A10B6 /* pshpack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pshpack1.h; sourceTree = "<group>"; };
 		9B7D00D32E764680006A10B6 /* AppleNetBoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleNetBoot.h; sourceTree = "<group>"; };
 		9B7D00D52E764681006A10B6 /* SimplePointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePointer.h; sourceTree = "<group>"; };
 		9B7D00D72E764681006A10B6 /* AppleSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleSystemInfo.h; sourceTree = "<group>"; };
@@ -135,15 +130,12 @@
 		9B7D011E2E764681006A10B6 /* SmBios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmBios.h; sourceTree = "<group>"; };
 		9B7D01202E764681006A10B6 /* AppleRamDmgDevicePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleRamDmgDevicePath.h; sourceTree = "<group>"; };
 		9B7D01222E764681006A10B6 /* AppleFirmwareFileName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleFirmwareFileName.h; sourceTree = "<group>"; };
-		9B7D01232E764681006A10B6 /* poppack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poppack.h; sourceTree = "<group>"; };
 		9B7D01242E764681006A10B6 /* EfiTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiTypes.h; sourceTree = "<group>"; };
 		9B7D01252E764681006A10B6 /* EfiPci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiPci.h; sourceTree = "<group>"; };
 		9B7D01262E764681006A10B6 /* EfiImageFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiImageFormat.h; sourceTree = "<group>"; };
 		9B7D01272E764681006A10B6 /* EfiCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiCommon.h; sourceTree = "<group>"; };
 		9B7D01282E764681006A10B6 /* EfiCapsule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiCapsule.h; sourceTree = "<group>"; };
-		9B7D01292E764681006A10B6 /* stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
 		9B7D012A2E764681006A10B6 /* EfiDevicePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfiDevicePath.h; sourceTree = "<group>"; };
-		9B7D012B2E764681006A10B6 /* string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string.h; sourceTree = "<group>"; };
 		9B7D012D2E764681006A10B6 /* debug.props */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = debug.props; sourceTree = "<group>"; };
 		9B7D012F2E764681006A10B6 /* PlatformExpert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformExpert.h; sourceTree = "<group>"; };
 		9B7D01302E764681006A10B6 /* AcpiUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AcpiUtils.cpp; sourceTree = "<group>"; };
@@ -181,7 +173,6 @@
 		9B7D01512E764681006A10B6 /* AcpiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcpiUtils.h; sourceTree = "<group>"; };
 		9B7D01522E764681006A10B6 /* Console.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Console.cpp; sourceTree = "<group>"; };
 		9B7D01532E764681006A10B6 /* NetBootImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetBootImages.h; sourceTree = "<group>"; };
-		9B7D01542E764681006A10B6 /* efi_string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = efi_string.c; sourceTree = "<group>"; };
 		9B7D01552E764681006A10B6 /* PictData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictData.h; sourceTree = "<group>"; };
 		9B7D01562E764681006A10B6 /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
 		9B7D01572E764681006A10B6 /* Crc32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Crc32.cpp; sourceTree = "<group>"; };
@@ -288,15 +279,11 @@
 		9B7D00BB2E764680006A10B6 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				9B7D00BC2E764680006A10B6 /* stdlib.h */,
-				9B7D00BD2E764680006A10B6 /* limits.h */,
 				9B7D00BE2E764680006A10B6 /* x64 */,
 				9B7D00C12E764680006A10B6 /* EfiFirmwareVolume.h */,
 				9B7D00C22E764680006A10B6 /* IndustryStandard */,
-				9B7D00CD2E764680006A10B6 /* stddef.h */,
 				9B7D00CE2E764680006A10B6 /* EfiFirmwareFileSystem.h */,
 				9B7D00CF2E764680006A10B6 /* EfiImage.h */,
-				9B7D00D02E764680006A10B6 /* pshpack1.h */,
 				9B7D00D12E764680006A10B6 /* Protocol */,
 				9B7D010A2E764681006A10B6 /* EfiError.h */,
 				9B7D010B2E764681006A10B6 /* EfiApi.h */,
@@ -305,15 +292,12 @@
 				9B7D010E2E764681006A10B6 /* EfiStdArg.h */,
 				9B7D010F2E764681006A10B6 /* x86 */,
 				9B7D01122E764681006A10B6 /* Guid */,
-				9B7D01232E764681006A10B6 /* poppack.h */,
 				9B7D01242E764681006A10B6 /* EfiTypes.h */,
 				9B7D01252E764681006A10B6 /* EfiPci.h */,
 				9B7D01262E764681006A10B6 /* EfiImageFormat.h */,
 				9B7D01272E764681006A10B6 /* EfiCommon.h */,
 				9B7D01282E764681006A10B6 /* EfiCapsule.h */,
-				9B7D01292E764681006A10B6 /* stdint.h */,
 				9B7D012A2E764681006A10B6 /* EfiDevicePath.h */,
-				9B7D012B2E764681006A10B6 /* string.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -734,7 +718,6 @@
 				9B7D01682E764681006A10B6 /* DevicePath.h */,
 				9B7D01582E764681006A10B6 /* DeviceTree.cpp */,
 				9B7D017C2E764681006A10B6 /* DeviceTree.h */,
-				9B7D01542E764681006A10B6 /* efi_string.c */,
 				9B7D015D2E764681006A10B6 /* FileIo.cpp */,
 				9B7D01762E764681006A10B6 /* FileIo.h */,
 				9B7D017B2E764681006A10B6 /* FileVault.cpp */,
@@ -903,7 +886,6 @@
 				9B7D01A12E764682006A10B6 /* GuidDefine.cpp in Sources */,
 				9B7D01C92E764682006A10B6 /* aestab.c in Sources */,
 				9B7D01AC2E764682006A10B6 /* DeviceTree.cpp in Sources */,
-				9B7D01AA2E764682006A10B6 /* efi_string.c in Sources */,
 				9B7D01BB2E764682006A10B6 /* Debug1394.cpp in Sources */,
 				9B7D01A42E764682006A10B6 /* PortRegisterIo.asm in Sources */,
 				9B7D01992E764682006A10B6 /* Memory.cpp in Sources */,
